@@ -226,6 +226,7 @@ body {
   .right-section {
     grid-column: span 4;
     border-radius: 0;
+
   }
 }
 
@@ -237,6 +238,7 @@ body {
   .right-section {
     border-radius: 0;
   }
+
 }
 
 @media screen and (max-width: 390px) {
@@ -248,6 +250,7 @@ body {
   .right-section {
     border-radius: 0;
   }
+
 
   .name {
     font-size: 20px;
