@@ -212,6 +212,10 @@ body {
   .awards-contents {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .right-section {
+    border-radius: 0;
+  }
 }
 
 @media screen and (max-width: 780px) {
@@ -221,6 +225,7 @@ body {
 
   .right-section {
     grid-column: span 4;
+    border-radius: 0;
   }
 }
 
@@ -228,12 +233,20 @@ body {
   .resume-contents {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .right-section {
+    border-radius: 0;
+  }
 }
 
 @media screen and (max-width: 390px) {
   .resume-contents {
     width: 100%;
     margin: 0 auto;
+  }
+
+  .right-section {
+    border-radius: 0;
   }
 
   .name {
