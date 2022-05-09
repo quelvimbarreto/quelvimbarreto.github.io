@@ -10,6 +10,7 @@
 
 body {
   background-color: #BFDBEF;
+
 }
 
 .resume-contents {
@@ -109,6 +110,7 @@ body {
 .skills ul {
   padding-top: 1.5rem;
 }
+
 .skills ul li p {
   padding: 0.4rem 0;
   color: #ffffff;
@@ -251,7 +253,6 @@ body {
   .right-section {
     border-radius: 0;
   }
-
   .name {
     font-size: 20px;
   }
