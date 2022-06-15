@@ -25,7 +25,8 @@ const carousel = new Swiper(".carousel", {
 // SLIDER 2
 
 const largura = function () {
-  const janela = window.innerWidth;
+const janela = window.innerWidth;
+
   if (janela > 1200) {
     const cardSlider = new Swiper(".cardSlider", {
       // Optional parameters
