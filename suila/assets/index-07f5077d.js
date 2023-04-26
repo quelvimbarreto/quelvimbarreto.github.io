@@ -9125,7 +9125,7 @@ const Id = Xe.lazy(() =>
   $d = Xe.lazy(() =>
     yn(
       () => import("./Contact-13eb484a.js"),
-      ["assets/Contact-13eb484a.js", "suila/assets/Contact-7e2e6b6f.css"]
+      ["suila/assets/Contact-13eb484a.js", "suila/assets/Contact-7e2e6b6f.css"]
     )
   ),
   Ad = Xe.lazy(() =>

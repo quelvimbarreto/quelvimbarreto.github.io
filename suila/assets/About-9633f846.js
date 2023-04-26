@@ -1,5 +1,5 @@
 import { j as a } from "./index-07f5077d.js";
-const e = "suila/assets/woman2-45f59622.jpg";
+const e = "assets/woman2-45f59622.jpg";
 function o() {
   return a.jsxs("div", {
     className: "about",
