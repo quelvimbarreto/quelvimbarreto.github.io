@@ -1,5 +1,5 @@
 import { R as k, r as be } from "./index-07f5077d.js";
-const Sa = "suila/assets/logo-2112ce49.png";
+const Sa = "assets/logo-2112ce49.png";
 function g() {
   return (
     (g = Object.assign
