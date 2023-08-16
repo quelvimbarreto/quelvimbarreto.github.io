@@ -3,9 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="text/javascript" src="./assets/js/t-scroll.min.js"></script>
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/tailwind.css" />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="./assets/css/t-scroll.min.css"
+    />
     <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/img/favicon-16x16.png"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/img/favicon-32x32.png"
+    />
     <link
       rel="shortcut icon"
       href="./assets/img/favicon.ico"
@@ -90,14 +108,17 @@
       </div>
     </nav>
     <!-- INÍCIO DA SEÇÃO PRINCIPAL -->
-    <section id="sobre" class="text-gray-500 body-font bg-gray-800">
+    <section
+      id="sobre"
+      class="fadeUp t-animated text-gray-500 body-font bg-gray-800"
+    >
       <div
         class="container py-20 mx-auto flex items-center justify-center flex-col"
       >
         <img
           class="w-full mb-10 object-cover object-center contrast-75 md:h-[500px]"
           alt="hero"
-          src="https://images.pexels.com/photos/7875996/pexels-photo-7875996.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          src="./assets/img/hero.webp"
         />
         <div class="text-center lg:w-2/3 w-full px-5">
           <h1 class="title-font sm:text-5xl text-3xl mb-6 font-thin text-white">
@@ -128,7 +149,7 @@
           NOSSOS VALORES
         </h1>
         <div
-          class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col"
+          class="fadeLeft flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col"
         >
           <div
             class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-[#cba148] text-white flex-shrink-0"
@@ -150,7 +171,7 @@
           </div>
         </div>
         <div
-          class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col"
+          class="fadeRight flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col"
         >
           <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
             <h2 class="text-gray-900 text-lg title-font font-medium mb-2">
@@ -171,7 +192,7 @@
           </div>
         </div>
         <div
-          class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col"
+          class="fadeLeft flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col"
         >
           <div
             class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-[#cba148] text-white flex-shrink-0"
@@ -192,7 +213,7 @@
           </div>
         </div>
         <div
-          class="flex items-center lg:w-3/5 mx-auto border-b sm:flex-row flex-col"
+          class="fadeRight flex items-center lg:w-3/5 mx-auto border-b sm:flex-row flex-col"
         >
           <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
             <h2 class="text-gray-900 text-lg title-font font-medium mb-2">
@@ -228,7 +249,7 @@
           </p>
         </div>
         <div class="flex flex-wrap -m-4 justify-center">
-          <div class="p-4 w-full lg:w-1/4 shadow-md">
+          <div class="fadeLeft p-4 w-full lg:w-1/4 shadow-md">
             <div
               class="h-full bg-white pb-4 pt-16 rounded-lg overflow-hidden text-center relative text-gray-600"
             >
@@ -285,7 +306,7 @@
               </div>
             </div>
           </div>
-          <div class="p-4 w-full lg:w-1/4 shadow-md">
+          <div class="fadeRight p-4 w-full lg:w-1/4 shadow-md">
             <div
               class="h-full bg-white bg-opacity-100 pb-4 pt-16 rounded-lg overflow-hidden text-center relative text-gray-600"
             >
@@ -349,7 +370,7 @@
       </div>
     </section>
     <!-- INÍCIO DA SEÇÃO CONTATO -->
-    <section id="contato" class="text-gray-600 body-font relative">
+    <section id="contato" class="fadeUp text-gray-600 body-font relative">
       <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
         <div
           class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative"
@@ -406,43 +427,66 @@
             equipe responderá o mais rápido possível para discutir suas
             necessidades e agendar uma consulta, se necessário.
           </p>
-          <div class="relative mb-4">
-            <label for="name" class="leading-7 text-sm text-gray-600"
-              >Nome</label
-            >
-            <input
-              type="text"
-              id="name"
-              name="name"
-              class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-            />
-          </div>
-          <div class="relative mb-4">
-            <label for="email" class="leading-7 text-sm text-gray-600"
-              >Email</label
-            >
-            <input
-              type="email"
-              id="email"
-              name="email"
-              class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-            />
-          </div>
-          <div class="relative mb-4">
-            <label for="message" class="leading-7 text-sm text-gray-600"
-              >Mensagem</label
-            >
-            <textarea
-              id="message"
-              name="message"
-              class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-            ></textarea>
-          </div>
-          <button
-            class="text-white bg-[#461220] border-0 py-2 px-6 focus:outline-none hover:bg-[#772b3f] rounded text-lg"
+          <form
+            action="https://api.sheetmonkey.io/form/m455dwKNZjtBAC5QEnJv5x"
+            method="post"
           >
-            Enviar
-          </button>
+            <div class="relative mb-4">
+              <label for="Nome" class="leading-7 text-sm text-gray-600"
+                >Nome</label
+              >
+              <input
+                type="text"
+                id="nome"
+                name="Nome"
+                required
+                class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              />
+            </div>
+            <div class="relative mb-4">
+              <label for="Email" class="leading-7 text-sm text-gray-600"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="Email"
+                required
+                class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              />
+              <label for="Telefone" class="leading-7 text-sm text-gray-600"
+                >Telefone</label
+              >
+              <input
+                type="number"
+                id="telefone"
+                name="Telefone"
+                required
+                class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              />
+            </div>
+            <div class="relative mb-4">
+              <label for="Mensagem" class="leading-7 text-sm text-gray-600"
+                >Mensagem</label
+              >
+              <textarea
+                id="message"
+                name="Mensagem"
+                class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+              ></textarea>
+            </div>
+            <input
+              type="hidden"
+              name="Enviado"
+              value="x-sheetmonkey-current-date-time"
+            />
+            <button
+              type="submit"
+              class="text-white bg-[#461220] border-0 py-2 px-6 focus:outline-none hover:bg-[#772b3f] rounded text-lg"
+            >
+              Enviar
+            </button>
+          </form>
         </div>
       </div>
     </section>
@@ -523,5 +567,6 @@
         document.getElementById("nav-content").classList.toggle("hidden");
       };
     </script>
+    <script src="./assets/js/animation.js"></script>
   </body>
 </html>
