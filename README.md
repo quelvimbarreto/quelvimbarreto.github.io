@@ -1,3 +1,6 @@
+(Em construção)
+
+
 PROJETOS
 
 1. [LOJA_ELETRONICA](https://quelvimbarreto.github.io/react-app/)
